@@ -6,7 +6,7 @@ import { Button, Typography } from "@mui/material";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import AddIcon from "@mui/icons-material/Add";
+import SaveIcon from '@mui/icons-material/Save';
 import { useEffect, useState } from "react";
 import { updateUser, getUsers } from "../services/users";
 import { useParams, useNavigate } from "react-router-dom";
@@ -151,8 +151,8 @@ export default function EditUser() {
           />
         </FormGroup>
       </Stack>
-      <Button variant="contained" startIcon={<AddIcon />} onClick={addBtnClick}>
-        Add
+      <Button variant="contained" startIcon={<SaveIcon />} onClick={addBtnClick}>
+        Save changes
       </Button>
     </Box>
   );
